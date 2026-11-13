@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Compass-needle launcher icon: gray dial, red course arrow, green
+     bearing-back marker, matching the app's compass face colors. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:pathData="M4,24 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0"
+        android:fillColor="#000000"
+        android:strokeColor="#808080"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M24,9 L29,25 L24,22 L19,25 Z"
+        android:fillColor="#E02020" />
+    <path
+        android:pathData="M24,26 L27,31 L24,39 L21,31 Z"
+        android:fillColor="#35C759" />
+</vector>

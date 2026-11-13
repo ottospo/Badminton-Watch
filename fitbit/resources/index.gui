@@ -1,0 +1,24 @@
+<svg>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="import" href="widgets.gui" />
+
+  <rect id="background" x="0" y="0" width="300" height="300" fill="#111111" />
+
+  <text class="label" x="12" y="38">Hits/set:</text>
+  <text class="label" x="12" y="76">Total hits:</text>
+  <text class="label" x="12" y="114">Max hits/set:</text>
+
+  <text id="setHits" class="value" x="288" y="38">0</text>
+  <text id="totalHits" class="value" x="288" y="76">0</text>
+  <text id="maxSetHits" class="value" x="288" y="114">0</text>
+
+  <text id="elapsed" class="elapsed" x="150" y="152">Elapsed: 00h:00m:00s</text>
+
+  <rect id="startButton" x="90" y="168" width="120" height="50" rx="8" fill="#2d7d46" />
+  <text id="startButtonText" class="buttonText" x="150" y="201">START</text>
+
+  <rect id="batteryBody" x="262" y="274" width="26" height="14" rx="2"
+        fill="none" stroke="#35C759" stroke-width="2" />
+  <rect id="batteryFill" x="265" y="277" width="20" height="8" rx="1" fill="#35C759" />
+  <rect id="batteryTerminal" x="288" y="278" width="3" height="6" rx="1" fill="#35C759" />
+</svg>

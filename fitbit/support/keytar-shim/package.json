@@ -1,0 +1,6 @@
+{
+  "name": "keytar",
+  "version": "6.0.1",
+  "description": "File-based keytar shim for @fitbit/sdk-cli (native keytar does not build on modern Node)",
+  "main": "index.js"
+}

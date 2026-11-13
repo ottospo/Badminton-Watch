@@ -1,0 +1,29 @@
+com/ottospo/tripcompanion/TripTracker.java
+ com.ottospo.tripcompanion.TripTracker
+ com.ottospo.tripcompanion.TripTracker$1
+ com.ottospo.tripcompanion.TripTracker$TrailPoint
+ com.ottospo.tripcompanion.TripTracker$TrailSnapshot
+com/ottospo/tripcompanion/TrackingService.java
+ com.ottospo.tripcompanion.TrackingService
+ com.ottospo.tripcompanion.TrackingService$1
+com/ottospo/tripcompanion/CompassView.java
+ com.ottospo.tripcompanion.CompassView
+com/ottospo/tripcompanion/Geo.java
+ com.ottospo.tripcompanion.Geo
+com/ottospo/tripcompanion/MainActivity.java
+ com.ottospo.tripcompanion.MainActivity
+ com.ottospo.tripcompanion.MainActivity$1
+ com.ottospo.tripcompanion.MainActivity$2
+ com.ottospo.tripcompanion.MainActivity$3
+ com.ottospo.tripcompanion.MainActivity$4
+ com.ottospo.tripcompanion.MainActivity$5
+com/ottospo/tripcompanion/TrailView.java
+ com.ottospo.tripcompanion.TrailView
+ com.ottospo.tripcompanion.TrailView$1
+ com.ottospo.tripcompanion.TrailView$2
+com/ottospo/tripcompanion/BuildConfig.java
+ com.ottospo.tripcompanion.BuildConfig
+com/ottospo/tripcompanion/TrailViewport.java
+ com.ottospo.tripcompanion.TrailViewport
+com/ottospo/tripcompanion/BatteryView.java
+ com.ottospo.tripcompanion.BatteryView

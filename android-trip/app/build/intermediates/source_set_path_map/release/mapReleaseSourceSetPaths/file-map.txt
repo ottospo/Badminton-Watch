@@ -1,0 +1,7 @@
+com.ottospo.tripcompanion.app-pngs-0 C:\Projects\Badminton-Watch\android-trip\app\build\generated\res\pngs\release
+com.ottospo.tripcompanion.app-resValues-1 C:\Projects\Badminton-Watch\android-trip\app\build\generated\res\resValues\release
+com.ottospo.tripcompanion.app-packageReleaseResources-2 C:\Projects\Badminton-Watch\android-trip\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.ottospo.tripcompanion.app-packageReleaseResources-3 C:\Projects\Badminton-Watch\android-trip\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.ottospo.tripcompanion.app-release-4 C:\Projects\Badminton-Watch\android-trip\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.ottospo.tripcompanion.app-main-5 C:\Projects\Badminton-Watch\android-trip\app\src\main\res
+com.ottospo.tripcompanion.app-release-6 C:\Projects\Badminton-Watch\android-trip\app\src\release\res

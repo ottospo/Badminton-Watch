@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ottospo.tripcompanion.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Projects\\Badminton-Watch\\android-trip\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,-1,-1",
+                        "startColumns": "4,-1,-1",
+                        "startOffsets": "57,-1,-1",
+                        "endColumns": "49,-1,-1",
+                        "endOffsets": "102,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,105,204",
+                        "endColumns": "49,98,50",
+                        "endOffsets": "100,199,250"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Owner\\.gradle\\daemon\\8.11.1\\com.ottospo.tripcompanion.app-mergeDebugResources-2:\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Projects\\Badminton-Watch\\android-trip\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "51",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

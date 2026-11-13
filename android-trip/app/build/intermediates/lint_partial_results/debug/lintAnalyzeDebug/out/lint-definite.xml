@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.10.1" type="incidents">
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@android:color/black` with a theme that also paints a background (inferred theme is `@android:style/Theme.Material.NoActionBar`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="6"
+            column="5"
+            startOffset="236"
+            endLine="6"
+            endColumn="46"
+            endOffset="277"/>
+    </incident>
+
+    <incident
+        id="ButtonStyle"
+        severity="warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)">
+        <fix-composite
+            description="Make borderless">
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+                    startOffset="3555"
+                    endOffset="4385"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+                    startOffset="3892"
+                    endOffset="4106"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+                    startOffset="4118"
+                    endOffset="4364"/>
+            </fix-attribute>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="107"
+            column="10"
+            startOffset="3893"
+            endLine="107"
+            endColumn="16"
+            endOffset="3899"/>
+    </incident>
+
+    <incident
+        id="ButtonStyle"
+        severity="warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)">
+        <fix-composite
+            description="Make borderless">
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+                    startOffset="3555"
+                    endOffset="4385"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+                    startOffset="3892"
+                    endOffset="4106"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+                    startOffset="4118"
+                    endOffset="4364"/>
+            </fix-attribute>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="114"
+            column="10"
+            startOffset="4119"
+            endLine="114"
+            endColumn="16"
+            endOffset="4125"/>
+    </incident>
+
+    <incident
+        id="ClickableViewAccessibility"
+        severity="warning"
+        message="`TrailView#onTouchEvent` should call `TrailView#performClick` when a click is detected">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/TrailView.java"
+            line="121"
+            column="20"
+            startOffset="4871"
+            endLine="121"
+            endColumn="32"
+            endOffset="4883"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="232"
+            column="37"
+            startOffset="9315"
+            endLine="232"
+            endColumn="43"
+            endOffset="9321"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="245"
+            column="33"
+            startOffset="10004"
+            endLine="245"
+            endColumn="40"
+            endOffset="10011"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="277"
+            column="32"
+            startOffset="11425"
+            endLine="277"
+            endColumn="45"
+            endOffset="11438"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="279"
+            column="32"
+            startOffset="11506"
+            endLine="279"
+            endColumn="62"
+            endOffset="11536"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="281"
+            column="32"
+            startOffset="11602"
+            endLine="281"
+            endColumn="39"
+            endOffset="11609"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="283"
+            column="32"
+            startOffset="11706"
+            endLine="283"
+            endColumn="52"
+            endOffset="11726"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="308"
+            column="38"
+            startOffset="13028"
+            endLine="308"
+            endColumn="52"
+            endOffset="13042"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="320"
+            column="32"
+            startOffset="13572"
+            endLine="320"
+            endColumn="44"
+            endOffset="13584"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/ottospo/tripcompanion/MainActivity.java"
+            line="354"
+            column="33"
+            startOffset="14884"
+            endLine="354"
+            endColumn="42"
+            endOffset="14893"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Ready&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="42"
+            column="9"
+            startOffset="1564"
+            endLine="42"
+            endColumn="29"
+            endOffset="1584"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;--&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="53"
+            column="9"
+            startOffset="1965"
+            endLine="53"
+            endColumn="26"
+            endOffset="1982"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;--&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="64"
+            column="9"
+            startOffset="2358"
+            endLine="64"
+            endColumn="26"
+            endOffset="2375"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Course: --&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="74"
+            column="9"
+            startOffset="2702"
+            endLine="74"
+            endColumn="34"
+            endOffset="2727"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Alt: --  Path: 0 m&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="84"
+            column="9"
+            startOffset="3052"
+            endLine="84"
+            endColumn="42"
+            endOffset="3085"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Elapsed: 00h:00m:00sec&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="94"
+            column="9"
+            startOffset="3424"
+            endLine="94"
+            endColumn="46"
+            endOffset="3461"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;START&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="111"
+            column="13"
+            startOffset="4046"
+            endLine="111"
+            endColumn="33"
+            endOffset="4066"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;PAUSE&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="119"
+            column="13"
+            startOffset="4304"
+            endLine="119"
+            endColumn="33"
+            endOffset="4324"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;◀&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="130"
+            column="9"
+            startOffset="4660"
+            endLine="130"
+            endColumn="25"
+            endOffset="4676"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;▶&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="139"
+            column="9"
+            startOffset="4952"
+            endLine="139"
+            endColumn="25"
+            endOffset="4968"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Compass&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="149"
+            column="9"
+            startOffset="5312"
+            endLine="149"
+            endColumn="31"
+            endOffset="5334"/>
+    </incident>
+
+</incidents>

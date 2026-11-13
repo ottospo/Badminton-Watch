@@ -1,0 +1,26 @@
+.label {
+  font-family: System-Regular;
+  font-size: 24px;
+  fill: #ffffff;
+}
+
+.value {
+  font-family: System-Regular;
+  font-size: 24px;
+  fill: #ffffff;
+  text-anchor: end;
+}
+
+.elapsed {
+  font-family: System-Regular;
+  font-size: 18px;
+  fill: #cccccc;
+  text-anchor: middle;
+}
+
+.buttonText {
+  font-family: System-Bold;
+  font-size: 24px;
+  fill: #ffffff;
+  text-anchor: middle;
+}

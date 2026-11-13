@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.ottospo.tripcompanion.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "com.ottospo.tripcompanion.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\8.11.1\\com.ottospo.tripcompanion.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\8.11.1\\com.ottospo.tripcompanion.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Owner\\.gradle\\daemon\\8.11.1\\com.ottospo.tripcompanion.app-debug-4:\\drawable_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Owner\\.gradle\\daemon\\8.11.1\\com.ottospo.tripcompanion.app-main-6:\\drawable\\ic_launcher.xml"
+    }
+]

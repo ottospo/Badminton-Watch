@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Projects\\Badminton-Watch\\android-trip\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Projects\\Badminton-Watch\\android-trip\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Projects\\Badminton-Watch\\android-trip\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher.xml.flat",
+        "source": "C:\\Projects\\Badminton-Watch\\android-trip\\app\\src\\main\\res\\drawable\\ic_launcher.xml"
+    }
+]

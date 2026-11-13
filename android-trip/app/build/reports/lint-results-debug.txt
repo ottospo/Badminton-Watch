@@ -1,0 +1,140 @@
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:6: Warning: Possible overdraw: Root element paints background @android:color/black with a theme that also paints a background (inferred theme is @android:style/Theme.Material.NoActionBar) [Overdraw]
+    android:background="@android:color/black"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:107: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+        <Button
+         ~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:114: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+        <Button
+         ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\TrailView.java:121: Warning: TrailView#onTouchEvent should call TrailView#performClick when a click is detected [ClickableViewAccessibility]
+    public boolean onTouchEvent(MotionEvent event) {
+                   ~~~~~~~~~~~~
+
+   Explanation for issues of type "ClickableViewAccessibility":
+   If a View that overrides onTouchEvent or uses an OnTouchListener does not
+   also implement performClick and call it when clicks are detected, the View
+   may not handle accessibility actions properly. Logic handling the click
+   actions should ideally be placed in View#performClick as some accessibility
+   services invoke performClick when a click action should occur.
+
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:232: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            startStopButton.setText("STOP");    // refreshUi() keeps it truthful
+                                    ~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:245: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        startStopButton.setText("START");
+                                ~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:277: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("Trip paused");
+                               ~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:279: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("Location is OFF — enable GPS");
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:281: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("Ready");
+                               ~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:283: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            statusText.setText("Reacquiring GPS...");
+                               ~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:308: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                distanceText.setText("Wait for fix");
+                                     ~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:320: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            courseText.setText("Course: --");
+                               ~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\java\com\ottospo\tripcompanion\MainActivity.java:354: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            pageCaption.setText("Compass");
+                                ~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:42: Warning: Hardcoded string "Ready", should use @string resource [HardcodedText]
+        android:text="Ready"
+        ~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:53: Warning: Hardcoded string "--", should use @string resource [HardcodedText]
+        android:text="--"
+        ~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:64: Warning: Hardcoded string "--", should use @string resource [HardcodedText]
+        android:text="--"
+        ~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:74: Warning: Hardcoded string "Course: --", should use @string resource [HardcodedText]
+        android:text="Course: --"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:84: Warning: Hardcoded string "Alt: --  Path: 0 m", should use @string resource [HardcodedText]
+        android:text="Alt: --  Path: 0 m"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:94: Warning: Hardcoded string "Elapsed: 00h:00m:00sec", should use @string resource [HardcodedText]
+        android:text="Elapsed: 00h:00m:00sec"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:111: Warning: Hardcoded string "START", should use @string resource [HardcodedText]
+            android:text="START"
+            ~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:119: Warning: Hardcoded string "PAUSE", should use @string resource [HardcodedText]
+            android:text="PAUSE"
+            ~~~~~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:130: Warning: Hardcoded string "◀", should use @string resource [HardcodedText]
+        android:text="◀" />
+        ~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:139: Warning: Hardcoded string "▶", should use @string resource [HardcodedText]
+        android:text="▶" />
+        ~~~~~~~~~~~~~~~~
+C:\Projects\Badminton-Watch\android-trip\app\src\main\res\layout\activity_main.xml:149: Warning: Hardcoded string "Compass", should use @string resource [HardcodedText]
+        android:text="Compass"
+        ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 24 warnings

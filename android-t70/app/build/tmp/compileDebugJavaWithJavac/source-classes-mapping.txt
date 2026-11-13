@@ -1,0 +1,10 @@
+com/ottospo/badmintonwatch/BuildConfig.java
+ com.ottospo.badmintonwatch.BuildConfig
+com/ottospo/badmintonwatch/BatteryView.java
+ com.ottospo.badmintonwatch.BatteryView
+com/ottospo/badmintonwatch/MainActivity.java
+ com.ottospo.badmintonwatch.MainActivity
+ com.ottospo.badmintonwatch.MainActivity$1
+ com.ottospo.badmintonwatch.MainActivity$2
+ com.ottospo.badmintonwatch.MainActivity$3
+ com.ottospo.badmintonwatch.MainActivity$4

@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PlatformIO: Monitor",
+            "type": "shell",
+            "command": "${env:USERPROFILE}/.platformio/penv/Scripts/pio.exe",
+            "args": [
+                "device",
+                "monitor",
+                "-p",
+                "COM4",
+                "-b",
+                "115200"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "panel": "dedicated",
+                "focus": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+// Top-level build file for the Badminton hit counter Android app.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        // AGP 4.2.2 is the newest version that runs on the JDK 8
+        // installed on this machine.
+        classpath 'com.android.tools.build:gradle:4.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}

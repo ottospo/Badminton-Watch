@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher
+id battery_view
+id bearing_text
+id compass_view
+id course_text
+id distance_text
+id elapsed_text
+id extra_text
+id page_caption
+id page_next
+id page_prev
+id pause_button
+id privacy_link
+id start_stop_button
+id status_text
+id trail_view
+id trip_controls
+id trip_root
+id view_flipper
+layout activity_main
+string app_name
+string privacy_no_browser
+string privacy_policy

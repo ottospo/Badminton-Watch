@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trip_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="10dp">
+
+    <com.ottospo.tripcompanion.BatteryView
+        android:id="@+id/battery_view"
+        android:layout_width="34dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/privacy_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:gravity="top|center_horizontal"
+        android:text="@string/privacy_policy"
+        android:textColor="#5AC8FA"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/privacy_link"
+        android:layout_toStartOf="@id/battery_view"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Ready"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="--"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bearing_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance_text"
+        android:layout_centerHorizontal="true"
+        android:text="--"
+        android:textColor="#35C759"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/course_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bearing_text"
+        android:layout_centerHorizontal="true"
+        android:text="Course: --"
+        android:textColor="#E02020"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/extra_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_text"
+        android:layout_centerHorizontal="true"
+        android:text="Alt: --  Path: 0 m"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/elapsed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra_text"
+        android:layout_centerHorizontal="true"
+        android:text="Elapsed: 00h:00m:00sec"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/trip_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/elapsed_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_stop_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="START"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:enabled="false"
+            android:text="PAUSE"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/page_prev"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/trip_controls"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:text="◀" />
+
+    <Button
+        android:id="@+id/page_next"
+        android:layout_width="48dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/trip_controls"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="▶" />
+
+    <TextView
+        android:id="@+id/page_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/page_prev"
+        android:layout_alignBottom="@id/page_prev"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Compass"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/page_prev"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp">
+
+        <com.ottospo.tripcompanion.CompassView
+            android:id="@+id/compass_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.ottospo.tripcompanion.TrailView
+            android:id="@+id/trail_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+</RelativeLayout>

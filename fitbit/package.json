@@ -1,0 +1,27 @@
+{
+  "name": "badminton-watch",
+  "version": "1.0.0",
+  "description": "Badminton hit counter for Fitbit Versa",
+  "private": true,
+  "fitbit": {
+    "appUUID": "c2fc289d-e30c-4a5c-931e-e308201dbba8",
+    "appType": "app",
+    "appDisplayName": "Badminton",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#111111",
+    "requestedPermissions": [
+      "access_activity"
+    ],
+    "buildTargets": [
+      "meson"
+    ]
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "overrides": {
+    "@openid/appauth": "1.3.0",
+    "keytar": "file:./support/keytar-shim"
+  }
+}
