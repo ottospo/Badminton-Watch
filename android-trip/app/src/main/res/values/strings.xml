@@ -3,4 +3,108 @@
     <string name="app_name">TrailTracker</string>
     <string name="privacy_policy">Privacy</string>
     <string name="privacy_no_browser">No browser is available to open the privacy policy.</string>
+    <string name="book_link_description">Open In a Sea of Deception on Amazon</string>
+    <string name="book_no_browser">No app is available to open the Amazon book page.</string>
+    <string name="sample_trip">Sample trip · tap START</string>
+    <string name="sample_trip_gps_off">Sample trip · GPS off</string>
+    <string name="location_off">Location is OFF — enable GPS</string>
+    <string name="trail_start">Start</string>
+    <string name="trail_first_fix">First fix</string>
+    <string name="trail_current">Current</string>
+    <string name="trail_caption">Trail Points (%1$d)\nTap twice to fit trail</string>
+    <string name="share_trail">Share</string>
+    <string name="open_trail_title">Tap a saved trail to view on map</string>
+    <string name="share_trail_title">Share a saved trail</string>
+    <string name="share_trail_instead">Share instead</string>
+    <string name="trail_saving">Saving trail</string>
+    <string name="trail_saved_title">Trail saved</string>
+    <string name="trail_saved_path">Trail info is saved in:\n\n%1$s\n\nYou can view GPX files on a computer with GPXSee:\n%2$s\n\nEnable Data → Use styles in GPXSee to show trail colors.</string>
+    <string name="gpxsee_url">https://sourceforge.net/projects/gpxsee/</string>
+    <string name="gpxsee_no_browser">No browser is available to open the GPXSee page.</string>
+    <string name="trail_keep">Keep</string>
+    <string name="trail_delete">Delete</string>
+    <string name="trail_delete_failed">Could not delete the saved GPX trail. Try again or keep it.</string>
+    <string name="trail_save_failed">Could not save the GPX trail. The trail remains on screen until a new trip starts.</string>
+    <string name="trail_not_saved_empty">No GPX saved: the trip has no GPS points.</string>
+    <string name="trail_none_saved">No saved GPX trails yet. Stop a trip with GPS points to save one.</string>
+    <string name="trail_list_failed">Could not access saved GPX trails.</string>
+    <string name="trail_share_failed">Could not open the sharing menu.</string>
+    <string name="trail_open_failed">Could not open the trail. Install a GPX viewer such as GPXSee and try again.</string>
+    <string name="map_privacy_title">Online trail map</string>
+    <string name="map_privacy_message">The map loads OpenStreetMap tiles over the internet. The map provider receives your IP address and the area you view. The recorded GPX file is not uploaded.</string>
+    <string name="map_privacy_continue">View map</string>
+    <string name="map_back">Back</string>
+    <string name="map_open_external">GPX app</string>
+    <string name="map_loading">Loading trail…</string>
+    <string name="map_load_failed">Could not read this GPX trail. You can still try opening or sharing it.</string>
+    <string name="map_network_hint">Map requires internet. Pinch to zoom.</string>
+    <string name="map_offline">No internet. The map may be incomplete; the trail is still shown.</string>
+    <string name="map_tiles_failed">Some map tiles could not load. Check your connection; the trail is still shown.</string>
+    <string name="map_display_failed">Could not display the map. You can still open or share the GPX file.</string>
+    <string name="map_attribution">© OpenStreetMap contributors</string>
+    <string name="map_no_browser">No browser is available to open the OpenStreetMap page.</string>
+    <string name="trail_storage_permission_required">Storage access is required on this Android version to save or share trails in Documents.</string>
+    <string name="trail_folder_select_explanation">Before starting, select Main Storage → Trails so the app can save trips there. If Trails does not exist, create it in the phone’s file manager first. You only need to select it once.</string>
+    <string name="trail_folder_select">Select folder</string>
+    <string name="trail_folder_not_selected">No folder selected; the trip was not started.</string>
+    <string name="trail_folder_picker_failed">Could not open the folder picker. The trip was not started.</string>
+    <string name="trail_folder_invalid">Could not access that folder. Select the Trails folder directly inside Main Storage and allow access.</string>
+    <string name="units_metric_short">km</string>
+    <string name="units_imperial_short">mi</string>
+    <string name="units_metric_description">Metric units. Tap to switch to imperial.</string>
+    <string name="units_imperial_description">Imperial units. Tap to switch to metric.</string>
+    <string name="date_moon">%1$s %2$s</string>
+    <string name="date_moon_description">%1$s %2$s. Approximate moon phase: %3$s.</string>
+    <string-array name="moon_phase_symbols">
+        <item>🌑</item>
+        <item>🌒</item>
+        <item>🌓</item>
+        <item>🌔</item>
+        <item>🌕</item>
+        <item>🌖</item>
+        <item>🌗</item>
+        <item>🌘</item>
+    </string-array>
+    <string-array name="moon_phase_names">
+        <item>new moon</item>
+        <item>waxing crescent</item>
+        <item>first quarter</item>
+        <item>waxing gibbous</item>
+        <item>full moon</item>
+        <item>waning gibbous</item>
+        <item>last quarter</item>
+        <item>waning crescent</item>
+    </string-array>
+    <string name="transport_mode_title">Transportation mode</string>
+    <string name="transport_mode_description">Transportation mode: %1$s. Tap to change.</string>
+    <string name="transport_walk">🚶 Walk</string>
+    <string name="transport_pause">⏸ Pause</string>
+    <string name="photo">Photo</string>
+    <string name="photo_description">Mark the last trail location and open the camera.</string>
+    <string name="photo_without_location">No GPS trail location is available to mark yet. The camera will still open.</string>
+    <string name="photo_marker_failed">Could not add the photo marker to the trail. The camera will still open.</string>
+    <string name="photo_camera_failed">Could not open a camera app. If a location was available, the photo marker remains on the trail.</string>
+    <string name="gnss_inactive">Satellites: --</string>
+    <string name="gnss_used">Used: %1$s</string>
+    <string name="gnss_waiting">waiting</string>
+    <string name="gnss_none_used">none</string>
+    <string name="gnss_unavailable">unavailable</string>
+    <string-array name="gnss_constellations">
+        <item>Other</item>
+        <item>GPS</item>
+        <item>SBAS</item>
+        <item>GLO</item>
+        <item>QZSS</item>
+        <item>BDS</item>
+        <item>GAL</item>
+        <item>NavIC</item>
+    </string-array>
+    <string-array name="transport_modes">
+        <item>@string/transport_walk</item>
+        <item>🚲 Bike</item>
+        <item>🏍 Motorbike</item>
+        <item>🚗 Car</item>
+        <item>🚤 Boat</item>
+        <item>✈ Plane</item>
+    </string-array>
 </resources>

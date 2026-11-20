@@ -6,12 +6,16 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Material.NoActionBar">
+        <activity android:name=".TrailMapActivity" android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -24,5 +28,10 @@
             android:name=".TrackingService"
             android:foregroundServiceType="location"
             android:exported="false" />
+        <provider
+            android:name=".TrailShareProvider"
+            android:authorities="${applicationId}.trails"
+            android:exported="false"
+            android:grantUriPermissions="true" />
     </application>
 </manifest>

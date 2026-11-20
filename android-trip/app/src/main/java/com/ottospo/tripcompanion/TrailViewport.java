@@ -31,6 +31,14 @@ final class TrailViewport {
         return Math.min(width, height) / INITIAL_SPAN_M * zoom;
     }
 
+    float centerX() {
+        return centerX;
+    }
+
+    float centerY() {
+        return centerY;
+    }
+
     float screenX(float x, float width, float height) {
         return width / 2f + (x - centerX) * scale(width, height);
     }

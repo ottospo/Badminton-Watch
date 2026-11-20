@@ -1,14 +1,67 @@
 apply plugin: 'com.android.application'
 
+dependencies {
+    implementation 'org.maplibre.gl:android-sdk:11.13.5'
+    testImplementation 'junit:junit:4.13.2'
+    testRuntimeOnly 'net.sf.kxml:kxml2:2.3.0'
+}
+
+def uploadKeyStoreFile = file('../key/upload-key.p12')
+def uploadStorePassword = System.getenv('ANDROID_UPLOAD_STORE_PASSWORD')
+def uploadKeyPassword = System.getenv('ANDROID_UPLOAD_KEY_PASSWORD')
+def uploadKeyAlias = System.getenv('ANDROID_UPLOAD_KEY_ALIAS')
+def hasUploadSigningCredentials = uploadStorePassword != null &&
+        uploadKeyPassword != null &&
+        uploadKeyAlias != null &&
+        !uploadKeyAlias.trim().isEmpty()
+
 android {
     namespace 'com.ottospo.tripcompanion'
     compileSdk 36
 
+    signingConfigs {
+        playUpload {
+            if (hasUploadSigningCredentials) {
+                storeFile uploadKeyStoreFile
+                storeType 'PKCS12'
+                storePassword uploadStorePassword
+                keyPassword uploadKeyPassword
+                keyAlias uploadKeyAlias
+            }
+        }
+    }
+
     defaultConfig {
         applicationId 'com.ottospo.tripcompanion'
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 36
-        versionCode 2
-        versionName '1.1'
+        versionCode 4
+        versionName '1.3'
+    }
+
+    buildTypes {
+        release {
+            if (hasUploadSigningCredentials) {
+                signingConfig signingConfigs.playUpload
+            }
+        }
+    }
+}
+
+tasks.register('verifyPlayUploadSigning') {
+    doLast {
+        if (!uploadKeyStoreFile.isFile()) {
+            throw new GradleException("Play upload keystore not found: ${uploadKeyStoreFile}")
+        }
+        if (!hasUploadSigningCredentials) {
+            throw new GradleException(
+                    'Set ANDROID_UPLOAD_STORE_PASSWORD, ANDROID_UPLOAD_KEY_PASSWORD, and ANDROID_UPLOAD_KEY_ALIAS before building the Play bundle.')
+        }
+    }
+}
+
+tasks.configureEach {
+    if (name == 'bundleRelease') {
+        dependsOn tasks.named('verifyPlayUploadSigning')
     }
 }

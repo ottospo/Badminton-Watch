@@ -83,14 +83,14 @@ public class CompassView extends View {
         // stays visible next to the shorter course arrow when both align)
         if (hasStart) {
             paint.setColor(GREEN);
-            paint.setStrokeWidth(dp(4));
+            paint.setStrokeWidth(dp(3));
             drawRadialLine(canvas, cx, cy, bearingDeg, 0, radius - dp(5));
         }
 
         // Red arrow: course over ground (direction of travel)
         if (courseValid) {
             paint.setColor(RED);
-            paint.setStrokeWidth(dp(4));
+            paint.setStrokeWidth(dp(3));
             float tipR = radius - dp(18);
             drawRadialLine(canvas, cx, cy, courseDeg, 0, tipR);
             drawArrowhead(canvas, cx, cy, courseDeg, tipR);
@@ -111,7 +111,7 @@ public class CompassView extends View {
         double rad = Math.toRadians(degrees);
         float tipX = cx + (float) (tipR * Math.sin(rad));
         float tipY = cy - (float) (tipR * Math.cos(rad));
-        paint.setStrokeWidth(dp(3));
+        paint.setStrokeWidth(dp(2.5f));
         for (int side = -1; side <= 1; side += 2) {
             double back = Math.toRadians(degrees + side * 150.0);
             canvas.drawLine(tipX, tipY,
